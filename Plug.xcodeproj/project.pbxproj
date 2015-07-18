@@ -27,6 +27,7 @@
 		B504E6A51A897087001B414B /* Plug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B504E6461A8968DC001B414B /* Plug.framework */; };
 		B507A3C91A8E85BC008E3DB1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507A3C81A8E85BC008E3DB1 /* Errors.swift */; };
 		B507A3CA1A8E85BC008E3DB1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B507A3C81A8E85BC008E3DB1 /* Errors.swift */; };
+		B50BAB611B59EFB400C5F74E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B50BAB601B59EFB400C5F74E /* Default-568h@2x.png */; };
 		B5264A871AE68AED0062537C /* PlugChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5264A851AE68AA30062537C /* PlugChannel.swift */; };
 		B5264A881AE68AEE0062537C /* PlugChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5264A851AE68AA30062537C /* PlugChannel.swift */; };
 		B55097A01A9A4FE7003E5155 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550979F1A9A4FE7003E5155 /* JSON.swift */; };
@@ -97,6 +98,7 @@
 		B504E69C1A896E82001B414B /* Plug_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plug_Tests.swift; sourceTree = "<group>"; };
 		B504E6AF1A898110001B414B /* Plug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Plug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B507A3C81A8E85BC008E3DB1 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B50BAB601B59EFB400C5F74E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B5264A851AE68AA30062537C /* PlugChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlugChannel.swift; sourceTree = "<group>"; };
 		B550979F1A9A4FE7003E5155 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		B560B5261AA4A15000F3161F /* PlugReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlugReachability.h; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		B58D64691A898F81005A0002 /* Plug_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				B50BAB601B59EFB400C5F74E /* Default-568h@2x.png */,
 				B58D646A1A898F81005A0002 /* Info.plist */,
 				B58D646B1A898F81005A0002 /* Plug.h */,
 			);
@@ -360,7 +363,8 @@
 		B504E60B1A89230F001B414B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Stand Alone, inc.";
 				TargetAttributes = {
 					B504E6121A89230F001B414B = {
@@ -408,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58D64931A899094005A0002 /* Images.xcassets in Resources */,
+				B50BAB611B59EFB400C5F74E /* Default-568h@2x.png in Resources */,
 				B58D64911A899094005A0002 /* LaunchScreen.xib in Resources */,
 				B58D64921A899094005A0002 /* Main.storyboard in Resources */,
 			);
@@ -560,6 +565,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -623,6 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/TestHost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -633,6 +640,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/TestHost/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -654,6 +662,7 @@
 				INFOPLIST_FILE = Plug/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Plug;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -676,6 +685,7 @@
 				INFOPLIST_FILE = Plug/iOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Plug;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -701,16 +711,14 @@
 		B504E6A21A896E82001B414B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
 			};
@@ -719,12 +727,10 @@
 		B504E6A31A896E82001B414B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
 			};
@@ -750,6 +756,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Plug;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -776,6 +783,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalone.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Plug;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
